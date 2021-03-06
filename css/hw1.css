@@ -1,0 +1,114 @@
+/* This resets CSS to ensure it will be same across browsers*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* This makes sure all elements inherit that property */
+}
+
+html {
+  font-size: 62.5%;
+  /* Browser default is 16px,  we want 10px so we do 10/16 * 100% */
+}
+
+body {
+  box-sizing: border-box;
+  /* By default this is not inherited */
+  /* This ensures that box model so that borders and paddings are no longer added to total height or width*/
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  padding: 3rem;
+  height: 100vh;
+}
+
+main {
+  height: 80%;
+}
+
+header {
+  background-image: url(../images/flywheel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 20%;
+}
+
+h1 {
+  color: #fff;
+}
+
+nav {
+  margin: 2rem;
+}
+
+nav a {
+  font-size: 2rem;
+  padding: 1.5rem;
+  margin: 0 6rem;
+  background-color: #fff;
+  opacity: 0.4;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #000;
+  width: 20%;
+}
+.active {
+  opacity: 1;
+}
+
+.left {
+  float: left;
+  width: 20%;
+  height: 150%;
+  padding: 2rem;
+  background-color: #777613;
+  text-align: center;
+}
+
+.left img {
+  width: 80%;
+  margin: 1rem 0;
+  border: 0.2rem solid #000;
+}
+
+.right {
+  float: right;
+  width: 80%;
+  height: 100%;
+  padding: 1rem;
+}
+table {
+  box-sizing: border-box;
+  border-style: hidden;
+  margin-left: 15%;
+  margin-top: 6%;
+}
+th {
+  background-color: #92a050;
+  color: #fff;
+  padding: 1rem 1rem;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #b0de53;
+}
+td {
+  background-color: #e4f5d4;
+  padding: 1rem;
+  opacity: 0.6;
+}
+th:nth-child(1) {
+  text-align: left;
+}
+
+td:nth-child(2) {
+  text-align: center;
+}
+td:nth-child(3) {
+  text-align: center;
+}
+td:hover {
+  opacity: 1;
+}
